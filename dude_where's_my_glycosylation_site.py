@@ -1,5 +1,6 @@
 import re 
 
+# get sequence from fasta file
 def get_sequence(infile):
     input_sequence = open(infile).readlines()[1:]
     clean_sequence = []
@@ -11,6 +12,7 @@ def get_sequence(infile):
 
 sequence = get_sequence('talin.fasta')
 
+# find potential n-linked glycolysation sites
 sites = re.findall('N[^P][ST]', sequence)
 for site in sites:
 	print(site, int(sequence.index(site) + 1))
