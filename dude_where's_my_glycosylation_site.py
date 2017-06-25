@@ -15,6 +15,3 @@ sites = re.findall('N[^P][ST]', sequence)
 for site in sites:
 	print(site, int(sequence.index(site) + 1))
 
-string = "THADY"
-
-print(int(string.index('H') + 1))
