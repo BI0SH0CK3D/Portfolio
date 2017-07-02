@@ -32,7 +32,7 @@ class Sequence(object):
             res_dict[res] = res_count
         if percent == True:
             for res in res_dict:
-                res_dict[res] = round((res_count / self.length()) * 100, 2)
+                res_dict[res] = round((res_dict[res] / self.length()) * 100, 2)
         return res_dict
 
     # takes number for 'k', returns kmers in self.sequence
