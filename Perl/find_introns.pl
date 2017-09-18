@@ -5,7 +5,7 @@ use warnings;
 # Canonical Introns start with GT and end with AG
 my $target = "AATGGTTTCTCCCATCTCTCCATCGGCATAAAAATACAGAATGATCTAACGAA";
 
-# make array of matches by this pattern match in target
+# make array of matches using this pattern match in target
 my @matches = $target =~ /GT.*AG/g;
 
 # print update
