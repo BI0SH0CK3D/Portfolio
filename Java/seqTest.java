@@ -10,6 +10,7 @@ class Sequence
 {
 	String header;
 	String fasta;
+	int seqLength;
 
 	// constructor 
 	Sequence(String fileName)
@@ -17,6 +18,7 @@ class Sequence
 		String[] arr = getFasta(fileName);
 		header = arr[0];
 		fasta = arr[1];
+		seqLength = fasta.length();
 	}
 
 	// method to get header and fasta
@@ -87,5 +89,8 @@ public class seqTest
 
 		System.out.println("The sequence is: ");
 		System.out.println(seqObj.fasta);
+
+		System.out.println("The length of the fasta is:");
+		System.out.println(seqObj.seqLength);
 	}
 }
