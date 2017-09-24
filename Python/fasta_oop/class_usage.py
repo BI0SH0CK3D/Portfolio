@@ -1,5 +1,3 @@
-#!python3
-
 import fasta
 
 # initialize a protein squence from a fasta file 
